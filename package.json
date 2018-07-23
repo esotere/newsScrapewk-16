@@ -13,6 +13,7 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "heroku-postbuild": "npm build"
+
   },
   "repository": {
     "type": "git",
