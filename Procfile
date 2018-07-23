@@ -1,1 +1,1 @@
-web: web deployment
+web: node server.js
