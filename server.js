@@ -21,7 +21,7 @@ request("https://www.bbc.com/news/world", function(error, response, html) {
 
   // With cheerio, find each p-tag with the "title" class
   // (i: iterator. element: the current element)
-  $("p.title").each(function(i, element) {
+  $("p.buzzard_summary").each(function(i, element) {
 
     // Save the text of the element in a "title" variable
     const title = $(element).text();
