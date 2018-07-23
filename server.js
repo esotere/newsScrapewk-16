@@ -10,7 +10,7 @@ console.log("\n***********************************\n" +
             "\n***********************************\n");
 
 // Making a request for reddit's "webdev" board. The page's HTML is passed as the callback's third argument
-request("https://www.bbc.com/news/world", function(error, response, html) {
+request("https://www.bbc.com/news/world-us-canada-44918133", function(error, response, html) {
 
   // Load the HTML into cheerio and save it to a constiable
   // '$' becomes a shorthand for cheerio's selector commands, much like jQuery's '$'
@@ -21,7 +21,7 @@ request("https://www.bbc.com/news/world", function(error, response, html) {
 
   // With cheerio, find each p-tag with the "title" class
   // (i: iterator. element: the current element)
-  $("p.buzzard_summary").each(function(i, element) {
+  $("h1.story-body__introduction").each(function(i, element) {
 
     // Save the text of the element in a "title" variable
     const title = $(element).text();
